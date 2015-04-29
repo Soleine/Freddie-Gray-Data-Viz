@@ -1,0 +1,505 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+<HEAD>
+	<TITLE>In Freddie Grays Neighborhood, a Hard Life for Residents</TITLE>
+    <link rel="stylesheet" href="Style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   	<script src="http://code.highcharts.com/highcharts.js"></script>
+    <script> 
+      $(function () {
+    $('#White').highcharts({
+        chart: {
+            type: 'column',
+            
+             options3d: {
+                enabled: true,
+                alpha: 10,
+                beta: 25,
+                depth: 70
+            }
+        },
+         legend: {
+            enabled: false
+        },
+        tooltip: {
+            enabled: false
+        },
+          subtitle: {
+           text: 'Sandtown-Winchester has one of the lowest median household income in the city of Baltimore. The median of Sandtown-Winchester is almost $82,000 lower than the median of Roland Park',
+         align: "center",
+           useHTML: true
+       },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true , 
+                    format: '${y}'  
+                }
+            }
+        },
+        title: {
+            text: 'Household Income Compared with Baltimore Average',
+        },
+        xAxis: {
+            categories: ['Sandtown-Winchester', 'Baltimore Average', 'Greater Roland Park/Poplar Hill']
+        }, 
+        yAxis: { 
+        	title: { 
+            	enabled: true, 
+            	text: 'Median Household Income by Dollar',
+            }
+        },
+        credits: {
+            enabled: false 
+        },
+        series: [{
+ 			name: 'Median Household Income' ,  
+            data: [24822.40, 41385.00, 106770.60]
+        }]
+        
+    });
+});
+</script> 
+	<script> 
+      $(function () {
+    $('#Black').highcharts({
+        chart: {
+            type: 'column'
+        },
+        legend: {
+            enabled: false
+        },
+       tooltip: {
+            enabled: false
+        },
+            subtitle: {
+           text: 'Percentage - In terms of diversity, Sandtown is overwhelming made up of African Americans. 96.6% of its population is African American as opposed to the 7.9% in Roland Park.',
+           align: "center",
+           useHTML: true
+       },
+       plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true , 
+                    format: '{y}%' 
+                }
+            }
+        },
+        title: {
+            text: 'Percentage African American relative to Baltimore average'
+        },
+        xAxis: {
+           categories: ['Sandtown-Winchester', 'Baltimore Average', 'Greater Roland Park/Poplar Hill']
+        },
+        yAxis: { 
+        	title: { 
+            	enabled: true, 
+            	text: 'Percentage of African American Residents'
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+        	name: 'Caucasian' ,  
+            data: [ 96.6, 63.8, 7.9]
+        }]
+    });
+});
+</script> 
+	<script> 
+      $(function () {
+    $('#Income').highcharts({
+       chart: {
+            type: 'column'
+        },
+        legend: {
+            enabled: false
+        },
+       tooltip: {
+            enabled: false
+        },
+       plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true , 
+                    format: '{y}%' 
+                }
+            }
+        },
+           subtitle: {
+           text: 'Violent Crime - Sandtown experiences 10x more violent crimes than Roland Park. For every 1,000 residents Sandtown is likely to experience 224 violent crime reports whereas Roland Park will experience 23 violent crime reports.',
+             align: "center",
+           useHTML: true
+       },
+        title: {
+            text: 'Violent Crime Rate per 1,000 residents'
+        },
+        xAxis: {
+           categories: ['Sandtown-Winchester', 'Baltimore Average', 'Greater Roland Park/Poplar Hill']
+        },
+        yAxis: { 
+        	title: { 
+            	enabled: true, 
+            	text: 'Violent Crime Rate'
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+        	name: 'Caucasian' ,  
+            data: [ 22.4, 14.3, 2.3]
+        }]
+    });
+});
+</script> 
+	<script> 
+      $(function () {
+    $('#Graduates').highcharts({
+        chart: {
+            type: 'column'
+        },
+        legend: {
+            enabled: false
+        },
+       tooltip: {
+            enabled: false
+        },
+         subtitle: {
+           text: 'Life expectancy in Sandtown is about 69.7 years, an almost 15 year difference with Roland Park that has an average life expectancy of 84.4 years.',
+           align: "center",
+           useHTML: true
+       },
+       
+       plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true , 
+                    format: '{y} years' 
+                }
+            }
+        },
+        title: {
+            text: 'Average Life Expectancy'
+        },
+        xAxis: {
+              categories: ['Sandtown-Winchester', 'Baltimore Average', 'Greater Roland Park/Poplar Hill']
+        },
+        yAxis: { 
+        	title: { 
+            	enabled: true, 
+            	text: 'Average Life Expectancy'
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+        	name: 'Caucasian' ,  
+             data: [ 69.7, 73.9, 84.4]
+        }]
+    });
+});
+</script>
+	<script> 
+      $(function () {
+    $('#AButton').highcharts({
+ 
+         chart: {
+            type: 'column'
+        },
+        legend: {
+            enabled: false
+        },
+       tooltip: {
+            enabled: false
+        },
+       plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true , 
+                    format: '{y} %' 
+                }
+            }
+        },
+        title: {
+            text: 'Unemployment Rate'
+        },
+         subtitle: {
+           text: 'The unemployment rate in Sandtown is higher than both the Baltimore City average and significantly higher than roland Park\'s unemployment rate.',
+           align: "center",
+           useHTML: true
+       },
+        xAxis: {
+              categories: ['Sandtown-Winchester', 'Baltimore Average', 'Greater Roland Park/Poplar Hill']
+        },
+        yAxis: { 
+        	title: { 
+            	enabled: true, 
+            	text: 'Percentage of unemployed'
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+        	name: 'Caucasian' ,  
+             data: [ 22.7, 14.2, 3.5]
+        }]
+    });
+});
+</script>
+	<script> 
+      $(function () {
+    $('#BButton').highcharts({
+  
+   chart: {
+            type: 'column'
+        },
+        legend: {
+            enabled: false
+        },
+       tooltip: {
+            enabled: false
+        },
+       plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true , 
+                    format: '{y} ' 
+                }
+            }
+        },
+        title: {
+            text: 'Rate of Dirty Streets and Alleys Reports'
+        },
+         subtitle: {
+           text: 'Sandtown is reportedly one of the dirtiest neighborhoods in Baltimore City. Not only does Sandtown report dirty alleys and streets at a 40% higher rate than the rest of Baltimore City, it is reportedly almost 1828% dirtier than Roland Park.',
+           align: "center",
+           useHTML: true
+       },
+        xAxis: {
+              categories: ['Sandtown-Winchester', 'Baltimore Average', 'Greater Roland Park/Poplar Hill']
+        },
+        yAxis: { 
+        	title: { 
+            	enabled: true, 
+            	text:'Liquor Outlet Density per 1,000 Residents',
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+        	name: 'Caucasian' ,  
+             data: [ 128.8, 52.6, 7.5]
+        }]
+    });
+});
+
+</script>
+	<script> 
+	    $(function () {
+    $('#DirtyStreet').highcharts({
+  
+       chart: {
+           type: 'column'
+       },
+
+       title: {
+           text: 'Rate of Dirty Streets and Alleys Reports'',
+           x: -5 //center
+       },
+       subtitle: {
+           text: 'Sandtown is reportedly one of the dirtiest neighborhoods in Baltimore City. Not only does Sandtown report dirty alleys and streets at a 40% higher rate than the rest of Baltimore City, it is reportedly almost 1828% dirtier than Roland Park.',
+           align: "center",
+           useHTML: true
+       },
+       xAxis: {
+           title: {
+           text: ''
+           },
+            labels: {
+               rotation: -45,
+           },
+           categories: ['Greater Roland Park/Poplar Hill', 'Sandtown']
+       },
+       yAxis: {
+           title: {
+               text: 'Liquor Outlet Density per 1,000 Residents',
+               style: {
+                    fontWeight: 'bold',
+                    fontSize: '15px',                
+               }
+           },
+           plotLines: [{
+               value: 1.1,
+               width: 2,
+               color: 'red',
+               dashStyle: 'longdashdot',
+               label: {
+                   text: 'Baltimore City Density 1.1',
+               }
+           }]
+       },
+       tooltip: {
+           enabled: false
+       },
+       legend: {
+           enabled: false
+       },
+        plotOptions: {
+           series: {
+               dataLabels: {
+                   enabled: true,
+                    format: '{y} by 1,000 residents'
+               }
+           }
+       },
+       credits: {
+           text: ''
+           },
+       series: [{
+           
+           data: [{y: .4,
+            }, 1.3]
+       }]
+   });
+});
+
+</script>
+</div> 
+	<script>
+$(document).ready(function(){
+        
+	$(".WhiteButton").click(function(){
+        $("#White").show(); 
+        $("#Black").hide(); 
+        $("#Income").hide(); 
+        $("#Graduates").hide(); 
+        $("#AButton").hide(); 
+        $("#BButton").hide(); 
+        $("#DirtyStreet").hide(); 
+    });
+    $(".BlackButton").click(function(){
+        $("#Black").show(); 
+        $("#White").hide(); 
+        $("#Income").hide(); 
+        $("#Graduates").hide();
+         $("#AButton").hide(); 
+        $("#BButton").hide(); 
+        $("#DirtyStreet").hide(); 
+    });
+    $(".IncomeButton").click(function(){
+        $("#Income").show(); 
+        $("#White").hide(); 
+        $("#Black").hide(); 
+        $("#Graduates").hide();
+         $("#AButton").hide(); 
+        $("#BButton").hide(); 
+     $("#DirtyStreet").hide(); 
+    });
+      $(".GraduatesButton").click(function(){
+        $("#Graduates").show(); 
+        $("#White").hide(); 
+        $("#Black").hide(); 
+        $("#Income").hide(); 
+         $("#AButton").hide(); 
+        $("#BButton").hide(); 
+       $("#DirtyStreet").hide(); 
+        
+     });    
+     $(".AButton").click(function(){
+        $("#White").hide(); 
+        $("#Black").hide(); 
+        $("#Income").hide(); 
+        $("#Graduates").hide(); 
+         $("#AButton").show(); 
+        $("#BButton").hide(); 
+ $("#DirtyStreet").hide(); 
+    });
+    $(".BButton").click(function(){
+        $("#White").hide(); 
+        $("#Black").hide(); 
+        $("#Income").hide(); 
+        $("#Graduates").hide(); 
+         $("#AButton").hide(); 
+        $("#BButton").show(); 
+    $("#DirtyStreet").hide(); 
+    });
+    $(".CButton").click(function(){
+      
+        $("#White").hide(); 
+        $("#Black").hide(); 
+        $("#Income").hide(); 
+        $("#Graduates").hide(); 
+        $("#AButton").hide(); 
+    	$("#BButton").hide(); 
+      $("#DirtyStreet").show(); 
+    });
+});
+
+</script> 
+</HEAD>
+<BODY>
+	<div id="maincontainer">
+		
+			<div id="textcontainer">
+						
+				
+				<div id="headline">In Freddie Gray's Neighborhood,<br> a Hard Life for Residents</div>	
+
+				<div id="subhead">Baltimore's Sandtown-Winchester neighborhood -- where <a href = "http://www.cnn.com/2015/04/21/us/baltimore-freddie-gray-what-we-know/">Freddie Gray</a> grew up, was arrested, and where protests erupted following his death in police custody -- is a hard place to grow up. The West Baltimore neighborhood has one of the lowest median incomes in the city, with almost a quarter of its residents unemployed.  On average, people's lives in Sandtown are 15 years shorter than the residents of Roland Park, Baltimore's wealthiest community.<hr> <br>	<div id="mapcontainer">	<img src="baltimore.png">	</div><br><hr>Click on the buttons below to see how Sandtown compares to Roland Park and the rest of the city.</div>
+			</div> <!--close #textpcontainer-->
+			<br>
+			
+			
+		
+		<div id="bottomcontainer">
+			<div id="buttoncontainer">
+			 	<button type="button" class="WhiteButton">Median Income</button>
+  				<button type="button" class="BlackButton">% African American</button>
+  				<button type="button" class="IncomeButton">Violent Crime Rate</button>
+ 				<button type="button" class="GraduatesButton">Life Expectancy</button>
+ 				<button type="button" class="AButton">UnEmployment Rate</button>
+ 				<button type="button" class="BButton">Dirty Streets and Alleys</button>
+ 				
+ 				
+
+			</div>
+			
+			<br><br>
+			</div>
+				<div id="chartscontainer">
+				<div id="White" class="newchart"></div>
+				<div id="Black" class="loadhide newchart" ></div>
+				<div id="Income" class="loadhide newchart" ></div>
+				<div id="Graduates" class="loadhide newchart" ></div>
+				<div id="AButton" class="loadhide newchart" ></div>
+				<div id="BButton" class="loadhide newchart" ></div>
+				<div id="DirtyStreet" class="loadhide newchart" ></div>
+			</div>
+		</div> <!--Bottom container closing-->
+
+	
+	
+	<div id="footer"><p>Source: <a href="http://bniajfi.org/"><strong>Baltimore Neighborhood Indicators Alliance</strong></a></p></div>
+  
+
+
+	
+
+	
+	</div> <!--close #maincontainer-->
+
+	
+</BODY>
+</HTML>
